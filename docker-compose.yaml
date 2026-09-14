@@ -1,0 +1,10 @@
+services:
+  mongodb:
+    image: mongodb:v1
+
+networks:
+  default:
+    driver: bridge
+    name: roboshop
+    external: false # set to true if you created the network manually using `docker network create`
+
